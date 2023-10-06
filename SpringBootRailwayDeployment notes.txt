@@ -1,0 +1,14 @@
+I followed this tutorial:
+    Spring Boot Railway: How to deploy a Spring Boot application to Railway
+        https://www.youtube.com/watch?v=5sVxvF47dcU
+
+If you run Application, it will also start a PostgreSql DB  docker container...and you can then open the browser
+and navigate to http://localhost:8080/api/posts to see the posts that were inserted in the DB from posts.json.
+
+This app is configured in application.yml to run with "prod" profile, so that the configuration data from
+application-prod.yml is used when deployed on Railway. Don't commit with "dev" as the app deployed on Railway will probably
+not work anymore.
+
+To see the app link go in your Railway account, click on the github app, go to settings and obtain the custom link.
+When entering in the browser remember to add /api/posts etc, depending on what request you are making.
+Example of link (this is not working...it is dummy link): https://myApp-pro-7804.up.railway.app
